@@ -8,4 +8,11 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
+
+
+     <string-array name="homeitems">
+         <item>viewpager动画</item>
+         <item>待学习内容</item>
+     </string-array>
+
 </resources>

@@ -1,62 +1,55 @@
 package com.xiaoma.hometest;
 
+import android.content.Intent;
 import android.os.Bundle;
-import android.support.v4.view.PagerAdapter;
-import android.support.v4.view.ViewPager;
-import android.support.v7.app.AppCompatActivity;
-
+import android.support.v7.widget.LinearLayoutManager;
+import android.support.v7.widget.RecyclerView;
 import android.view.View;
-import android.view.ViewGroup;
-import android.widget.ImageView;
-
-import com.xiaoma.animation.ZoomOutPageTransformer;
+import android.widget.Toast;
 
 import java.util.ArrayList;
-import java.util.List;
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends BaseActivity {
 
-    private ViewPager mViewPager;
-
-
-    private int[] mImgIDs = new int[]{R.mipmap.abc, R.mipmap.cd};
-    private List<ImageView> mImageView = new ArrayList<>();
+    private RecyclerView mRecycleView;
+    private String[] mHomeItems;
+    private ArrayList<String> mDatas;
 
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        mViewPager = (ViewPager) findViewById(R.id.vp_viewpager);
-//        mViewPager.setPageTransformer(true,new DepthPageTransformer());
-        mViewPager.setPageTransformer(true, new ZoomOutPageTransformer());
-        mViewPager.setAdapter(new PagerAdapter() {
+        mRecycleView = (RecyclerView) findViewById(R.id.rv_recycleview);
+        mRecycleView.setLayoutManager(new LinearLayoutManager(this));
+        mHomeItems = getResources().getStringArray(R.array.homeitems);
+        initItems();
+        HomeAdapter adapter = new HomeAdapter(this, mDatas);
+        mRecycleView.setAdapter(adapter);
+        adapter.setOnItemClickLitener(new HomeAdapter.OnItemClickLitener() {
             @Override
-            public int getCount() {
-                return mImgIDs.length;
-            }
-
-            @Override
-            public boolean isViewFromObject(View view, Object object) {
-                return view == object;
-            }
-
-            @Override
-            public Object instantiateItem(ViewGroup container, int position) {
-                ImageView imageView = new ImageView(MainActivity.this);
-                imageView.setImageResource(mImgIDs[position]);
-                imageView.setScaleType(ImageView.ScaleType.CENTER_CROP);
-                container.addView(imageView);
-                mImageView.add(imageView);
-                return imageView;
-            }
-
-            @Override
-            public void destroyItem(ViewGroup container, int position, Object object) {
-                container.removeView(mImageView.get(position));
+            public void onItemClick(View view, int position) {
+                switch (position) {
+                    case 0:
+                        toNextClazz(AnimationActivity.class);
+                        break;
+                    case 1:
+                        Toast.makeText(MainActivity.this,"待学习内容",Toast.LENGTH_SHORT).show();
+                        break;
+                }
             }
         });
+    }
 
+    private void toNextClazz(Class clazz) {
+        Intent intent = new Intent(MainActivity.this, clazz);
+        startActivity(intent);
+    }
 
+    private void initItems() {
+        mDatas = new ArrayList<>();
+        for (int i = 0; i < mHomeItems.length; i++) {
+            mDatas.add(mHomeItems[i]);
+        }
     }
 }
