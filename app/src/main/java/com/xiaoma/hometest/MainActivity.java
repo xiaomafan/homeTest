@@ -10,6 +10,7 @@ import android.widget.Toast;
 import com.xiaoma.animation.AnimationActivity;
 import com.xiaoma.customview.WeatherActivity;
 import com.xiaoma.matchseven.MatchSeven;
+import com.xiaoma.shapeview.ShapeActivity;
 
 import java.util.ArrayList;
 
@@ -44,6 +45,9 @@ public class MainActivity extends BaseActivity {
                         toNextClazz(MatchSeven.class);
                         break;
                     case 3:
+                        toNextClazz(ShapeActivity.class);
+                        break;
+                    case 4:
                         Toast.makeText(MainActivity.this,"待学习内容",Toast.LENGTH_SHORT).show();
                         break;
                 }

@@ -1,3 +1,6 @@
 <resources>
     <string name="app_name">HomeTest</string>
+    <string name="shape_name">shape</string>
+    <string name="shapetitle">4678</string>
+    <string name="longtitle">一行白鹭上青天，都是青山绿水</string>
 </resources>

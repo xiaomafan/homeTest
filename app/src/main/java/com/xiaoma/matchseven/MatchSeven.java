@@ -78,7 +78,7 @@ public class MatchSeven extends BaseActivity {
         Uri imgUri = null;
         if (Build.VERSION.SDK_INT >= 24) {
             //如果是7.0或以上，使用getUriForFile()获取文件的Uri
-            imgUri = FileProvider.getUriForFile(this, "com.sheyuan.fileprovider", imgFile);
+            imgUri = FileProvider.getUriForFile(this, "com.sheyuan.picsprovider", imgFile);
         } else {
             imgUri = Uri.fromFile(imgFile);
         }

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+    <declare-styleable name="ShapeView">
+        <attr name="title" format="string" />
+        <attr name="titlesize" format="dimension" />
+        <attr name="titlecolor" format="color" />
+    </declare-styleable>
+
+    <declare-styleable name="ShapeImgText">
+        <attr name="imgtitle" format="string" />
+        <attr name="imgtitlesize" format="dimension" />
+        <attr name="imgtitlecolor" format="color" />
+        <attr name="img" format="reference" />
+        <attr name="scaleType">
+            <enum name="center" value="0" />
+            <enum name="centerCrop" value="1" />
+        </attr>
+    </declare-styleable>
+    
+    <declare-styleable name="CustomProgress">
+        <attr name="firstColor" format="color"/>
+        <attr name="secondColor" format="color"/>
+        <attr name="progressWidth" format="dimension"/>
+        <attr name="mySpeed" format="integer"/>
+    </declare-styleable>
+</resources>
