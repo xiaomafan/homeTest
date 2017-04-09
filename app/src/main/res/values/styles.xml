@@ -12,6 +12,7 @@
 
      <string-array name="homeitems">
          <item>viewpager动画</item>
+         <item>自定义View</item>
          <item>待学习内容</item>
      </string-array>
 

@@ -7,6 +7,10 @@ import android.support.v7.widget.RecyclerView;
 import android.view.View;
 import android.widget.Toast;
 
+import com.xiaoma.animation.AnimationActivity;
+import com.xiaoma.base.BaseActivity;
+import com.xiaoma.customview.CustomViewActivity;
+
 import java.util.ArrayList;
 
 public class MainActivity extends BaseActivity {
@@ -34,6 +38,9 @@ public class MainActivity extends BaseActivity {
                         toNextClazz(AnimationActivity.class);
                         break;
                     case 1:
+                        toNextClazz(CustomViewActivity.class);
+                        break;
+                    case 2:
                         Toast.makeText(MainActivity.this,"待学习内容",Toast.LENGTH_SHORT).show();
                         break;
                 }

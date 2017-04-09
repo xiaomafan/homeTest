@@ -1,4 +1,4 @@
-package com.xiaoma.hometest;
+package com.xiaoma.animation;
 
 import android.os.Bundle;
 import android.support.annotation.Nullable;
@@ -8,7 +8,8 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 
-import com.xiaoma.animation.ZoomOutPageTransformer;
+import com.xiaoma.base.BaseActivity;
+import com.xiaoma.hometest.R;
 
 import java.util.ArrayList;
 import java.util.List;
