@@ -13,6 +13,10 @@
      <string-array name="homeitems">
          <item>viewpager动画</item>
          <item>自定义View</item>
+         <item>适配7.0</item>
+         <item>自定义画图</item>
+         <item>天气自定义</item>
+
          <item>待学习内容</item>
      </string-array>
 

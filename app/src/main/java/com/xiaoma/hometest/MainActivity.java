@@ -11,6 +11,11 @@ import com.xiaoma.animation.AnimationActivity;
 import com.xiaoma.base.BaseActivity;
 import com.xiaoma.customview.CustomViewActivity;
 
+import com.xiaoma.customview.WeatherActivity;
+import com.xiaoma.matchseven.MatchSeven;
+import com.xiaoma.shapeview.ShapeActivity;
+
+
 import java.util.ArrayList;
 
 public class MainActivity extends BaseActivity {
@@ -41,6 +46,15 @@ public class MainActivity extends BaseActivity {
                         toNextClazz(CustomViewActivity.class);
                         break;
                     case 2:
+                        toNextClazz(MatchSeven.class);
+                        break;
+                    case 3:
+                        toNextClazz(ShapeActivity.class);
+                        break;
+                    case 4:
+                        toNextClazz(WeatherActivity.class);
+                        break;
+                    case 5:
                         Toast.makeText(MainActivity.this,"待学习内容",Toast.LENGTH_SHORT).show();
                         break;
                 }
