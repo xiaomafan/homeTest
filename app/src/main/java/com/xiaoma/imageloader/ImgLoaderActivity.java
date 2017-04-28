@@ -9,7 +9,7 @@ import android.widget.ImageView;
 
 import com.nostra13.universalimageloader.core.ImageLoader;
 import com.nostra13.universalimageloader.core.listener.SimpleImageLoadingListener;
-import com.xiaoma.hometest.BaseActivity;
+import com.xiaoma.base.BaseActivity;
 import com.xiaoma.hometest.LogHelp;
 import com.xiaoma.hometest.R;
 

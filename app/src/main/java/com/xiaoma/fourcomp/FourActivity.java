@@ -9,7 +9,7 @@ import android.support.annotation.Nullable;
 import android.view.View;
 import android.widget.Button;
 
-import com.xiaoma.hometest.BaseActivity;
+import com.xiaoma.base.BaseActivity;
 import com.xiaoma.hometest.LogHelp;
 import com.xiaoma.hometest.R;
 

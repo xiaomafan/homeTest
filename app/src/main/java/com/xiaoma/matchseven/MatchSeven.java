@@ -21,7 +21,7 @@ import android.widget.Button;
 import android.widget.ImageView;
 
 import com.bumptech.glide.Glide;
-import com.xiaoma.hometest.BaseActivity;
+import com.xiaoma.base.BaseActivity;
 import com.xiaoma.hometest.R;
 
 import java.io.File;

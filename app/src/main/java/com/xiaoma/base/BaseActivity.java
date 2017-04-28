@@ -1,4 +1,4 @@
-package com.xiaoma.hometest;
+package com.xiaoma.base;
 
 import android.support.v7.app.AppCompatActivity;
 

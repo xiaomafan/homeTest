@@ -8,7 +8,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 
-import com.xiaoma.hometest.BaseActivity;
+import com.xiaoma.base.BaseActivity;
 import com.xiaoma.hometest.R;
 
 import java.util.ArrayList;

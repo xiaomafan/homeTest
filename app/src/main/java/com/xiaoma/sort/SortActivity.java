@@ -5,7 +5,7 @@ import android.support.annotation.Nullable;
 import android.widget.Button;
 import android.widget.TextView;
 
-import com.xiaoma.hometest.BaseActivity;
+import com.xiaoma.base.BaseActivity;
 import com.xiaoma.hometest.R;
 
 import butterknife.Bind;

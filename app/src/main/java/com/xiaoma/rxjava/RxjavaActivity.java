@@ -8,7 +8,7 @@ import android.util.Log;
 import android.widget.Button;
 import android.widget.TextView;
 
-import com.xiaoma.hometest.BaseActivity;
+import com.xiaoma.base.BaseActivity;
 import com.xiaoma.hometest.LogHelp;
 import com.xiaoma.hometest.R;
 

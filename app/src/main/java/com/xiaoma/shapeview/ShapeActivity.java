@@ -3,7 +3,7 @@ package com.xiaoma.shapeview;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 
-import com.xiaoma.hometest.BaseActivity;
+import com.xiaoma.base.BaseActivity;
 import com.xiaoma.hometest.R;
 
 /**
