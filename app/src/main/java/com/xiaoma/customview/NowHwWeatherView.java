@@ -170,7 +170,7 @@ public class NowHwWeatherView extends View {
             if(i==0 || i==count){
                 mLinePaint.setStrokeWidth(1);
                 mLinePaint.setColor(Color.WHITE);
-                canvas.drawLine(0,-radius,0,-radius+80,mLinePaint);
+                canvas.drawLine(0,-radius,0,-radius+120,mLinePaint);
 
             }else if(i>=getStartLineIndex(minTemp,maxTemp) && i<=getEndLineIndex(minTemp,maxTemp)){
                 mLinePaint.setStrokeWidth(3);

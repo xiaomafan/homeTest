@@ -22,9 +22,9 @@
         android:layout_width="100dp"
         android:layout_height="80dp"
         android:padding="16dp"
-        sheyuan:title="@string/shapetitle"
-        sheyuan:titlecolor="@color/red"
-        sheyuan:titlesize="48dp" />
+        sheyuan:shapetitle="@string/shapetitle"
+        sheyuan:shapetitlecolor="@color/red"
+        sheyuan:shapetitlesize="48dp" />
 
     <com.xiaoma.shapeview.CustomImgText
         android:padding="8dp"

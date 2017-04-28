@@ -15,7 +15,10 @@
          <item>自定义View</item>
          <item>适配7.0</item>
          <item>自定义画图</item>
-         <item>待学习内容</item>
+         <item>Service</item>
+         <item>Imgloader学习</item>
+         <item>RxJava学习</item>
+         <item>排序</item>
      </string-array>
 
 </resources>

@@ -5,12 +5,15 @@ import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.view.View;
-import android.widget.Toast;
 
 import com.xiaoma.animation.AnimationActivity;
 import com.xiaoma.customview.WeatherActivity;
+import com.xiaoma.fourcomp.FourActivity;
+import com.xiaoma.imageloader.ImgLoaderActivity;
 import com.xiaoma.matchseven.MatchSeven;
+import com.xiaoma.rxjava.RxjavaActivity;
 import com.xiaoma.shapeview.ShapeActivity;
+import com.xiaoma.sort.SortActivity;
 
 import java.util.ArrayList;
 
@@ -48,7 +51,16 @@ public class MainActivity extends BaseActivity {
                         toNextClazz(ShapeActivity.class);
                         break;
                     case 4:
-                        Toast.makeText(MainActivity.this,"待学习内容",Toast.LENGTH_SHORT).show();
+                        toNextClazz(FourActivity.class);
+                        break;
+                    case 5:
+                        toNextClazz(ImgLoaderActivity.class);
+                        break;
+                    case 6:
+                        toNextClazz(RxjavaActivity.class);
+                        break;
+                    case 7:
+                        toNextClazz(SortActivity.class);
                         break;
                 }
             }

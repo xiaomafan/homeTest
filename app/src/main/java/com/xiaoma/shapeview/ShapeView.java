@@ -48,14 +48,14 @@ public class ShapeView extends View {
         {
             int index = typedArray.getIndex(i);
             switch (index){
-                case R.styleable.ShapeView_title:
+                case R.styleable.ShapeView_shapetitle:
                     mTitle=typedArray.getString(index);
                     break;
-                case R.styleable.ShapeView_titlesize:
+                case R.styleable.ShapeView_shapetitlesize:
                     mTitleSize=typedArray.getDimensionPixelSize(index,(int) TypedValue.applyDimension(
                             TypedValue.COMPLEX_UNIT_SP, 16, getResources().getDisplayMetrics()));
                     break;
-                case R.styleable.ShapeView_titlecolor:
+                case R.styleable.ShapeView_shapetitlecolor:
                     mTitleColor=typedArray.getColor(index,Color.BLACK);
                     break;
             }
