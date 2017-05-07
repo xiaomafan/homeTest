@@ -5,16 +5,17 @@ import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.view.View;
-import android.widget.Toast;
 
 import com.xiaoma.animation.AnimationActivity;
 import com.xiaoma.base.BaseActivity;
 import com.xiaoma.customview.CustomViewActivity;
-
 import com.xiaoma.customview.WeatherActivity;
+import com.xiaoma.fourcomp.FourActivity;
+import com.xiaoma.imageloader.ImgLoaderActivity;
 import com.xiaoma.matchseven.MatchSeven;
+import com.xiaoma.rxjava.RxjavaActivity;
 import com.xiaoma.shapeview.ShapeActivity;
-
+import com.xiaoma.sort.SortActivity;
 
 import java.util.ArrayList;
 
@@ -39,24 +40,34 @@ public class MainActivity extends BaseActivity {
             @Override
             public void onItemClick(View view, int position) {
                 switch (position) {
-                    case 0:
+                    case 0: //viewpager动画
                         toNextClazz(AnimationActivity.class);
                         break;
-                    case 1:
+                    case 1: //自定义view
                         toNextClazz(CustomViewActivity.class);
                         break;
-                    case 2:
+                    case 2: //适配7.0
                         toNextClazz(MatchSeven.class);
                         break;
-                    case 3:
+                    case 3: //自定义画图
                         toNextClazz(ShapeActivity.class);
                         break;
-                    case 4:
+                    case 4:  //服务学习
+                        toNextClazz(FourActivity.class);
+                        break;
+                    case 5: //Imageloader学习
+                        toNextClazz(ImgLoaderActivity.class);
+                        break;
+                    case 6:  //Rxjava学习
+                        toNextClazz(RxjavaActivity.class);
+                        break;
+                    case 7: //排序
+                        toNextClazz(SortActivity.class);
+                        break;
+                    case 8: //天气自定义
                         toNextClazz(WeatherActivity.class);
                         break;
-                    case 5:
-                        Toast.makeText(MainActivity.this,"待学习内容",Toast.LENGTH_SHORT).show();
-                        break;
+                    
                 }
             }
         });

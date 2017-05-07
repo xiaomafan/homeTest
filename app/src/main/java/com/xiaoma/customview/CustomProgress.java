@@ -102,6 +102,7 @@ public class CustomProgress extends View {
             mPaint.setColor(mFristColor);
             canvas.drawCircle(center,center,radius,mPaint);
             mPaint.setColor(mSecondColor);
+            //画圆弧从起始角度、圆心角角度
             canvas.drawArc(rectF,-90,mProgress,false,mPaint);
         }else {
             mPaint.setColor(mSecondColor);

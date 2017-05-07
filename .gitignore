@@ -6,6 +6,7 @@
 .DS_Store
 /build
 /captures
+.idea
 
 # Built application files
 *.apk
@@ -50,6 +51,7 @@ captures/
 .idea/libraries
 .idea/vcs.xml
 .idea/misc.xml
+.idea/modules.xml
 
 # Keystore files
 *.jks
