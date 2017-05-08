@@ -13,6 +13,7 @@ import com.xiaoma.customview.WeatherActivity;
 import com.xiaoma.fourcomp.FourActivity;
 import com.xiaoma.imageloader.ImgLoaderActivity;
 import com.xiaoma.matchseven.MatchSeven;
+import com.xiaoma.okhttp.OkhttpActivity;
 import com.xiaoma.rxjava.RxjavaActivity;
 import com.xiaoma.shapeview.ShapeActivity;
 import com.xiaoma.sort.SortActivity;
@@ -66,6 +67,9 @@ public class MainActivity extends BaseActivity {
                         break;
                     case 8: //天气自定义
                         toNextClazz(WeatherActivity.class);
+                        break;
+                    case 9: //okhttp网络请求
+                        toNextClazz(OkhttpActivity.class);
                         break;
                     
                 }

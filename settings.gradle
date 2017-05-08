@@ -1,2 +1,2 @@
-include ':app', ':jnidemo'
-include ':jNIDemo'
+include ':app'
+
