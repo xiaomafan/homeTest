@@ -3,6 +3,7 @@ package com.xiaoma.okhttp;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.view.View;
+import android.view.ViewConfiguration;
 import android.widget.Button;
 
 import com.xiaoma.base.BaseActivity;
@@ -43,6 +44,8 @@ public class OkhttpActivity extends BaseActivity {
         setContentView(R.layout.activity_okhttp);
         ButterKnife.bind(this);
         client = new OkHttpClient();
+        //系统滑动的最小距离
+        int touchSlop = ViewConfiguration.get(this).getScaledTouchSlop();
     }
 
     @OnClick({R.id.btn_get, R.id.btn_post})
