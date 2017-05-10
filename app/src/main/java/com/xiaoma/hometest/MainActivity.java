@@ -17,6 +17,7 @@ import com.xiaoma.okhttp.OkhttpActivity;
 import com.xiaoma.rxjava.RxjavaActivity;
 import com.xiaoma.shapeview.ShapeActivity;
 import com.xiaoma.sort.SortActivity;
+import com.xiaoma.status.StatusActivity;
 
 import java.util.ArrayList;
 
@@ -70,6 +71,9 @@ public class MainActivity extends BaseActivity {
                         break;
                     case 9: //okhttp网络请求
                         toNextClazz(OkhttpActivity.class);
+                        break;
+                    case 10: //状态栏学习
+                        toNextClazz(StatusActivity.class);
                         break;
                     
                 }
