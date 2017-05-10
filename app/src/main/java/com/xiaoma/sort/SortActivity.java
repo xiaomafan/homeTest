@@ -23,14 +23,27 @@ public class SortActivity extends BaseActivity {
     @Bind(R.id.tv_content)
     TextView tvContent;
 
+    private int[] arr;
+
+
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_sort);
         ButterKnife.bind(this);
+
+        arr = new int[]{3,5,3,11,0,44,2,9,4,8,1};
+
     }
 
     @OnClick(R.id.btn_sort)
     public void onViewClicked() {
+
+        quiteSort(arr,0,arr.length);
+    }
+
+    //快速排序法
+    private void quiteSort(int[] arr,int start,int end) {
+
     }
 }
