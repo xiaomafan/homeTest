@@ -32,6 +32,8 @@ public class MainActivity extends BaseActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        setTitleBg(R.color.red);
+        setTitle("欢迎加入小马帮");
         mRecycleView = (RecyclerView) findViewById(R.id.rv_recycleview);
         mRecycleView.setLayoutManager(new LinearLayoutManager(this));
         mHomeItems = getResources().getStringArray(R.array.homeitems);
