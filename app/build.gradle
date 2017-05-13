@@ -33,4 +33,5 @@ dependencies {
     compile 'io.reactivex:rxjava:1.0.14'
     compile 'io.reactivex:rxandroid:1.0.1'
     compile 'com.squareup.okhttp3:okhttp:3.7.0'
+    compile 'com.jakewharton:disklrucache:2.0.2'
 }

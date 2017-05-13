@@ -44,7 +44,7 @@ public class MyView extends ViewGroup {
         
         velocityTracker.clear();
         velocityTracker.recycle();
-
+        
         
         return super.onTouchEvent(event);
     }
@@ -55,7 +55,11 @@ public class MyView extends ViewGroup {
         mScroller.startScroll(scrollX,0,deltaX,0,1000);
         
         invalidate();
-        
+        post(new Runnable() {
+            @Override
+            public void run() {
+            }
+        });
         
     }
 

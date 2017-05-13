@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.view.View;
+import android.view.ViewTreeObserver;
 
 import com.xiaoma.animation.AnimationActivity;
 import com.xiaoma.base.BaseActivity;
@@ -93,5 +94,26 @@ public class MainActivity extends BaseActivity {
         for (int i = 0; i < mHomeItems.length; i++) {
             mDatas.add(mHomeItems[i]);
         }
+    }
+
+    @Override
+    protected void onStart() {
+        super.onStart();
+        ViewTreeObserver treeObserver = mRecycleView.getViewTreeObserver();
+        treeObserver.addOnGlobalLayoutListener(new ViewTreeObserver.OnGlobalLayoutListener() {
+            @Override
+            public void onGlobalLayout() {
+                mRecycleView.getViewTreeObserver().removeGlobalOnLayoutListener(this);
+                int measuredHeight = mRecycleView.getMeasuredHeight();//获取高度
+//  mRecycleView.getViewTreeObserver().removeOnGlobalLayoutListener(this);
+            }
+        });
+        
+        mRecycleView.post(new Runnable() {
+            @Override
+            public void run() {
+                int measuredHeight = mRecycleView.getMeasuredHeight(); //获取高度
+            }
+        });
     }
 }

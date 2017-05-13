@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@+id/mraid_content_layout"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/black"
+    >
+
+    <TextureView
+        android:id="@+id/xadsdk_player_video_textureView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:duplicateParentState="true"
+        />
+    <!--android:background="@color/xadsdk_frame_bg"-->
+    <!--android:src="@drawable/xadsdk_img_error"-->
+    <ImageView
+        android:id="@+id/framing_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+       
+        android:scaleType="fitCenter"
+       
+        android:visibility="gone"
+        />
+    <!--android:src="@drawable/xadsdk_ad_mini"-->
+    <ImageView
+        android:id="@+id/xadsdk_to_full_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="14dp"
+        android:layout_marginTop="14dp"
+        android:padding="10dp"
+        android:scaleType="center"
+       
+
+        />
+    <!--android:background="@drawable/xadsdk_ad_play"-->
+    <Button
+        android:id="@+id/xadsdk_small_play_btn"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_centerInParent="true"
+      
+        android:visibility="gone"
+        />
+    <!--android:background="@drawable/xadsdk_ad_loading_anim"-->
+    <ImageView
+        android:id="@+id/loading_bar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+       
+        />
+  
+</RelativeLayout>
