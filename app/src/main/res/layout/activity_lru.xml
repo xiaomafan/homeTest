@@ -8,10 +8,33 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="图片处理"/>
+    <Button
+        android:id="@+id/btn_memory"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="缓存图片显示"/>
+    <Button
+        android:id="@+id/btn_disk"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="disk图片显示"/>
     <ImageView
         android:id="@+id/iv_img"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:src="@mipmap/viewpager_one"/>
+        />
+    <ImageView
+        android:id="@+id/iv_momory"
+        android:layout_marginLeft="16dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+       />
+    <ImageView
+        android:id="@+id/iv_disk"
+        android:layout_marginLeft="32dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        />
+    
 
 </LinearLayout>

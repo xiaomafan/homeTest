@@ -13,6 +13,7 @@ import com.xiaoma.customview.CustomViewActivity;
 import com.xiaoma.customview.WeatherActivity;
 import com.xiaoma.fourcomp.FourActivity;
 import com.xiaoma.imageloader.ImgLoaderActivity;
+import com.xiaoma.lrubitmap.LruActivity;
 import com.xiaoma.matchseven.MatchSeven;
 import com.xiaoma.okhttp.OkhttpActivity;
 import com.xiaoma.rxjava.RxjavaActivity;
@@ -78,7 +79,9 @@ public class MainActivity extends BaseActivity {
                     case 10: //状态栏学习
                         toNextClazz(StatusActivity.class);
                         break;
-                    
+                    case 11: //图片缓存
+                        toNextClazz(LruActivity.class);
+                        break;
                 }
             }
         });
