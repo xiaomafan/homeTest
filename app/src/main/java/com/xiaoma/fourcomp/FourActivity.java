@@ -60,7 +60,8 @@ public class FourActivity extends BaseActivity {
                 bindService(bindIntent,connection,BIND_AUTO_CREATE);
                 break;
             case R.id.btn_unbind:
-                unbindService(connection);
+//                unbindService(connection);
+                myBinder.startDown("abc");
                 break;
         }
     }
@@ -73,14 +74,16 @@ public class FourActivity extends BaseActivity {
             // TODO Auto-generated method stub
             LogHelp.e(Tag, "onServiceConnected()");
             myBinder = (MyService.MyBinder) service;
-            myBinder.startDown();
+            myBinder.startDown("abc");
         }
         @Override
         public void onServiceDisconnected(ComponentName name) {
             // TODO Auto-generated method stub
             LogHelp.e(Tag, "onServiceDisconnected()");
+            
         }
+        
     };
-
+   
 
 }

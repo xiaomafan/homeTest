@@ -78,8 +78,9 @@ public class MyService extends Service {
 
     class MyBinder extends Binder {
 
-        public void startDown() {
+        public void startDown(String song) {
             LogHelp.e(Tag, "startDown()");
         }
     }
+    
 }

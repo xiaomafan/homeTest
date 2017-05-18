@@ -34,6 +34,8 @@
         <activity android:name="com.xiaoma.okhttp.OkhttpActivity"/>
         <activity android:name="com.xiaoma.status.StatusActivity"/>
         <activity android:name="com.xiaoma.lrubitmap.LruActivity"/>
+        <activity android:name="com.xiaoma.designstudy.StateActvity"/>
+        <activity android:name="com.xiaoma.designstudy.LoginActivity"/>
         
         <!--service服务清单列表-->
         <service android:name="com.xiaoma.fourcomp.MyService" />

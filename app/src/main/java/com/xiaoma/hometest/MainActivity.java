@@ -6,11 +6,13 @@ import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.view.View;
 import android.view.ViewTreeObserver;
+import android.widget.Toast;
 
 import com.xiaoma.animation.AnimationActivity;
 import com.xiaoma.base.BaseActivity;
 import com.xiaoma.customview.CustomViewActivity;
 import com.xiaoma.customview.WeatherActivity;
+import com.xiaoma.designstudy.StateActvity;
 import com.xiaoma.fourcomp.FourActivity;
 import com.xiaoma.imageloader.ImgLoaderActivity;
 import com.xiaoma.lrubitmap.LruActivity;
@@ -34,6 +36,11 @@ public class MainActivity extends BaseActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        Intent intent = getIntent();
+        String key = intent.getStringExtra("key");
+        if (key != null) {
+            Toast.makeText(this, key, Toast.LENGTH_SHORT).show();
+        }
         setTitleBg(R.color.red);
         setTitle("欢迎加入小马帮");
         mRecycleView = (RecyclerView) findViewById(R.id.rv_recycleview);
@@ -82,6 +89,9 @@ public class MainActivity extends BaseActivity {
                     case 11: //图片缓存
                         toNextClazz(LruActivity.class);
                         break;
+                    case 12: //图片缓存
+                        toNextClazz(StateActvity.class);
+                        break;
                 }
             }
         });
@@ -111,7 +121,7 @@ public class MainActivity extends BaseActivity {
 //  mRecycleView.getViewTreeObserver().removeOnGlobalLayoutListener(this);
             }
         });
-        
+
         mRecycleView.post(new Runnable() {
             @Override
             public void run() {
